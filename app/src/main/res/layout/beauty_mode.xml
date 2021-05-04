@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BeautyModeClass"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/timericonid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/timer_icon"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="@android:color/transparent"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/flash_icon_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/flash_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        app:backgroundTint="@android:color/transparent"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/flipid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/flip_icon"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        app:backgroundTint="@android:color/transparent"/>
+<ImageView
+    android:id="@+id/beautymodepreviewid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+/>
+</RelativeLayout>
+</layout>

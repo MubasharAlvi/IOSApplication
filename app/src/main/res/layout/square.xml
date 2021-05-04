@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@android:color/black">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/timer_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/timer_icon"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="@android:color/transparent"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/flash_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/flash_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        app:backgroundTint="@android:color/transparent"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/flip_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/flip_icon"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        app:backgroundTint="@android:color/transparent"/>
+
+    <io.fotoapparat.view.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="353dp"
+        android:layout_above="@id/fab_camera"
+        android:layout_marginBottom="94dp" />
+
+    <TextView
+        android:id="@+id/square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SQUARE"
+        android:textColor="#FFFF00"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="90dp"
+        />
+
+    <TextView
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="90dp"
+        android:layout_marginStart="30dp"
+        android:text="VIDEO"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginVertical="90dp"
+        android:text="CAMERA"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="@android:color/white"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/beauty_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/beauty_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        app:backgroundTint="@android:color/background_dark"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/gallery_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/splash_illus"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:layout_alignParentRight="true"
+        app:backgroundTint="@android:color/background_dark"/>
+</RelativeLayout>
