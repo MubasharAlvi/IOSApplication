@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".BeautyModeClass"
     >
+
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -38,10 +38,10 @@
         android:layout_alignParentTop="true"
         android:layout_margin="10dp"
         app:backgroundTint="@android:color/transparent"/>
-<ImageView
-    android:id="@+id/beautymodepreviewid"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-/>
+     <ImageView
+        android:id="@+id/beautymodepreviewid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/beauty_icon" />
 </RelativeLayout>
 </layout>

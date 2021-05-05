@@ -7,7 +7,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
 class SplashScreenClass : Fragment(R.layout.splash_screen) {
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -15,15 +14,11 @@ class SplashScreenClass : Fragment(R.layout.splash_screen) {
             {
                 SplastToCameraHom()
             }, 500
-
         )
-
     }
-
     private fun SplastToCameraHom() {
-       val action = SplashScreenClassDirections.actionSplashScreenClassToCameraHomeScreenClass()
+        val action = SplashScreenClassDirections.actionSplashScreenClassToCameraHomeScreenClass()
         findNavController().navigate(action)
-
     }
 
 }
