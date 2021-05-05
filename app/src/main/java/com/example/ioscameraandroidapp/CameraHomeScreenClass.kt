@@ -4,7 +4,6 @@ import android.Manifest
 import android.app.Activity.RESULT_OK
 import android.content.Intent
 import android.graphics.Bitmap
-import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -14,7 +13,6 @@ import android.widget.Toast
 import android.widget.Toast.makeText
 import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
-import androidx.compose.ui.text.input.KeyboardType
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.PermissionChecker.PERMISSION_GRANTED
@@ -84,12 +82,13 @@ class CameraHomeScreenClass : Fragment(R.layout.camera_home_screen) {
     ): View {
         viewModeClass.beautyImages.observe(viewLifecycleOwner, { beautyImage ->
             binding.beautymodeid.setBackgroundResource(beautyImage)
+            imageint = beautyImage
         })
 
         binding =
             inflate(layoutInflater, R.layout.camera_home_screen, container, false)
         binding.beautymodeid.setOnClickListener {
-            viewModeClass.saveBeautyImage(binding.beautymodeid.)
+            viewModeClass.saveBeautyImage(imageint)
             findNavController().navigate(R.id.action_cameraHomeScreenClass_to_beautyModeClass)
         }
         binding.galleryIconId.setOnClickListener {
